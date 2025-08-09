@@ -10,6 +10,6 @@ namespace eValService.Interface
 {
     public interface IInitiateAIService
     {
-        Task<string> InitiateAI(InitiateAIRequest objInitiateAIRequest);
+        Task<string> InitiateAI(List<InitiateAIRequest> objInitiateAIRequest);
     }
 }

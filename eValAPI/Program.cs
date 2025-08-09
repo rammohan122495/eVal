@@ -84,7 +84,16 @@ builder.Services.AddScoped<IInitiateAIService, InitiateAIService>();
 builder.Services.AddScoped<IAssessmentDetailsRepository, AssessmentDetailsRepository>();
 builder.Services.AddScoped<IRunReportRepository, RunReportRepository>();
 
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 // builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
@@ -93,7 +102,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseSwagger();
 app.UseSwaggerUI();
-
+app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

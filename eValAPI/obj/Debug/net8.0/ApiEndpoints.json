@@ -51,8 +51,24 @@
     "Parameters": [
       {
         "Name": "objInitiateAIRequest",
-        "Type": "eValDTO.DTOs.InitiateAIRequest",
+        "Type": "System.Collections.Generic.List\u00601[[eValDTO.DTOs.InitiateAIRequest, eValDTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eValAPI.Controllers.RunReportController",
+    "Method": "GetQuestionbyAttemptId",
+    "RelativePath": "api/RunReport/GetQuestionbyAttemptId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

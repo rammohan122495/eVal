@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eValAPI", "eValAPI\eValAPI.csproj", "{ABEFAE7C-9F43-40E9-ACB9-6046797F179C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eValAPI", "eValAPI\eValAPI.csproj", "{ABEFAE7C-9F43-40E9-ACB9-6046797F179C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eValService", "eValService\eValService.csproj", "{4858A247-BD43-46CB-8789-BB5B3B9E6DA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eValService", "eValService\eValService.csproj", "{4858A247-BD43-46CB-8789-BB5B3B9E6DA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eValRepository", "eValRepository\eValRepository.csproj", "{BB2276E0-133F-4364-9C85-963F7D015E30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eValRepository", "eValRepository\eValRepository.csproj", "{BB2276E0-133F-4364-9C85-963F7D015E30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eValDTO", "eValDTO\eValDTO.csproj", "{AD690014-9E0D-4757-8ED6-28781E315A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eValDTO", "eValDTO\eValDTO.csproj", "{AD690014-9E0D-4757-8ED6-28781E315A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eValAI", "eValAI\eValAI.csproj", "{A11E0C7F-F3ED-428F-974F-7D7B1D64CD88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AD690014-9E0D-4757-8ED6-28781E315A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD690014-9E0D-4757-8ED6-28781E315A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD690014-9E0D-4757-8ED6-28781E315A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A11E0C7F-F3ED-428F-974F-7D7B1D64CD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11E0C7F-F3ED-428F-974F-7D7B1D64CD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11E0C7F-F3ED-428F-974F-7D7B1D64CD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11E0C7F-F3ED-428F-974F-7D7B1D64CD88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

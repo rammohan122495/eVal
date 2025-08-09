@@ -11,5 +11,6 @@ namespace eValDTO.DTOs
         public int Id { get; set; }
         public int AssessmentId { get; set; }
         public int AttemptId { get; set; }
+        public bool IsProcessed { get; set; }
     }
 }

@@ -42,5 +42,19 @@ namespace eValAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("GetQuestionbyAttemptId")]
+        public async Task<IActionResult> GetQuestionbyAttemptId(string attemptId)
+        {
+            try
+            {
+                var response = await this._runReportService.GetQuestionbyAttemptId(attemptId);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

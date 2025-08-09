@@ -16,7 +16,7 @@ namespace eValAPI.Controllers
         }
 
         [HttpPost("InitiateAI")]
-        public async Task<IActionResult> InitiateAI([FromBody] InitiateAIRequest objInitiateAIRequest)
+        public async Task<IActionResult> InitiateAI([FromBody] List<InitiateAIRequest> objInitiateAIRequest)
         {
             try
             {

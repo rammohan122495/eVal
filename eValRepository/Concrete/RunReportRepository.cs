@@ -39,7 +39,8 @@ namespace eValRepository.Concrete
                             {
                                 Id = reader.GetInt32(reader.GetOrdinal("Id")),
                                 AssessmentId = reader.GetInt32(reader.GetOrdinal("AssessmentId")),
-                                AttemptId = reader.GetInt32(reader.GetOrdinal("AttemptId"))
+                                AttemptId = reader.GetInt32(reader.GetOrdinal("AttemptId")),
+                                IsProcessed = reader.GetBoolean(reader.GetOrdinal("Processed"))
                             };
 
                             audits.Add(audit);

@@ -15,6 +15,6 @@ namespace eValRepository.Interface
 
         Task<int> InsertAssessmentResultAudit(AssessmentResultAudit model);
 
-        Task<bool> UpdateIAResponseScoreAndComment(int id, string score, string comment);
+        Task<bool> UpdateIAResponseScoreAndComment(int id, decimal score, string comment);
     }
 }

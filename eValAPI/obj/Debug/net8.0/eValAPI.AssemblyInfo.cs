@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eValAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bc367989f1bab0ccf385c3461f064103986d6d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("eValAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eValAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

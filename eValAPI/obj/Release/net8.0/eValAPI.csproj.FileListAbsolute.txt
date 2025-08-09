@@ -158,3 +158,4 @@ D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\refint\eValAPI.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\eValAPI.pdb
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\eValAPI.genruntimeconfig.cache
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\ref\eValAPI.dll
+D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\eValAPI.sourcelink.json

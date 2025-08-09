@@ -111,7 +111,7 @@ namespace eValRepository.Concrete
             }
         }
 
-        public async Task<bool> UpdateIAResponseScoreAndComment(int id, string score, string comment)
+        public async Task<bool> UpdateIAResponseScoreAndComment(int id, decimal score, string comment)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             using (SqlCommand cmd = new SqlCommand("Update_AuditIAReponse", conn))
