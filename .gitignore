@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/eValAPI/bin
+/eValDTO/bin
+/eValDTO/obj
+/eValRepository/bin
+/eValRepository/obj
+/eValService/bin
+/eValService/obj

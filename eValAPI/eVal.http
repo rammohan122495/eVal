@@ -1,0 +1,6 @@
+@eVal_HostAddress = http://localhost:5001
+
+GET {{eVal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

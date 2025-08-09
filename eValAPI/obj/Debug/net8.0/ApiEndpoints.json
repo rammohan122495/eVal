@@ -1,0 +1,96 @@
+[
+  {
+    "ContainingType": "eValAPI.Controllers.AssessmentDetailsController",
+    "Method": "GetAllAssessmentResultAudits",
+    "RelativePath": "api/AssessmentDetails/GetAllAssessmentResultAudits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eValAPI.Controllers.AssessmentDetailsController",
+    "Method": "UpdateAssessmentResultAudit",
+    "RelativePath": "api/AssessmentDetails/UpdateAssessmentResultAudit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "actionStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateComment",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eValAPI.Controllers.InitiateAIController",
+    "Method": "InitiateAI",
+    "RelativePath": "api/InitiateAI/InitiateAI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objInitiateAIRequest",
+        "Type": "eValDTO.DTOs.InitiateAIRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eValAPI.Controllers.RunReportController",
+    "Method": "GetReportDetails",
+    "RelativePath": "api/RunReport/GetReportDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eValAPI.Controllers.RunReportController",
+    "Method": "PostRunReport",
+    "RelativePath": "api/RunReport/RunReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eValAPI.Controllers.UserAuthController",
+    "Method": "AuthenticateUser",
+    "RelativePath": "api/UserAuth/AuthenticateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objLoginRequest",
+        "Type": "eValDTO.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
