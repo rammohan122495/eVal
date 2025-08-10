@@ -10,7 +10,7 @@ namespace eValService.Interface
 {
     public interface IRunReportService
     {
-        Task<bool> PostRunReport();
+        Task<Response> PostRunReport();
         Task<List<AssessmentDetails>> GetReportDetails();
 
         Task<List<AssessmentResultAudit>> GetQuestionbyAttemptId(string attemptId);

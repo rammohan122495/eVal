@@ -4,6 +4,7 @@ D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.AssemblyInfoInputs.cache
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.AssemblyInfo.cs
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.csproj.CoreCompileInputs.cache
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.sourcelink.json
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\appsettings.Development.json
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\appsettings.json
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValAPI.exe
@@ -50,6 +51,7 @@ D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -137,12 +139,14 @@ D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawin
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValAI.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValDTO.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValRepository.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValService.dll
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValDTO.pdb
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValRepository.pdb
 D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValService.pdb
+D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValAI.pdb
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\staticwebassets.build.json
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\staticwebassets.development.json
@@ -158,7 +162,3 @@ D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\refint\eValAPI.dll
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.pdb
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.genruntimeconfig.cache
 D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\ref\eValAPI.dll
-D:\Radush\eVakAPI\eValAPI\obj\Debug\net8.0\eValAPI.sourcelink.json
-D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValAI.dll
-D:\Radush\eVakAPI\eValAPI\bin\Debug\net8.0\eValAI.pdb

@@ -13,5 +13,6 @@ namespace eValService.Interface
         Task<List<AssessmentResultAudit>> GetAllAssessmentResultAudits(string attemptId);
 
         Task<bool> UpdateAssessmentResultAudit(int id, string actionStatus, string updateComment);
+        Task<string> UpdateAxcelerate(ScoredItemRequest objScoredItemRequest);
     }
 }

@@ -159,3 +159,6 @@ D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\eValAPI.pdb
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\eValAPI.genruntimeconfig.cache
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\ref\eValAPI.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\eValAPI.sourcelink.json
+D:\Radush\eVakAPI\eValAPI\bin\Release\net8.0\Newtonsoft.Json.dll
+D:\Radush\eVakAPI\eValAPI\bin\Release\net8.0\eValAI.dll
+D:\Radush\eVakAPI\eValAPI\bin\Release\net8.0\eValAI.pdb

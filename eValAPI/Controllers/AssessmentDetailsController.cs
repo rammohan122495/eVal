@@ -1,4 +1,6 @@
-﻿using eValService.Interface;
+﻿using Azure.Core;
+using eValDTO.DTOs;
+using eValService.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -40,6 +42,24 @@ namespace eValAPI.Controllers
                     return Ok(response);
                 }
                 return NotFound(false);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut("UpdateAxcelerate")]
+        public async Task<IActionResult> UpdateAxcelerate(ScoredItemRequest objScoredItemRequest)
+        {
+            try
+            {
+                if (objScoredItemRequest == null || objScoredItemRequest.ScoredItemDTOs == null || !objScoredItemRequest.ScoredItemDTOs.Any())
+                {
+                    return BadRequest("Invalid or empty request.");
+                }
+                var response = await this._assessmentDetailsService.UpdateAxcelerate(objScoredItemRequest);
+                return Ok(response);
             }
             catch (Exception ex)
             {

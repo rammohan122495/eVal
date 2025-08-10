@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using static System.Formats.Asn1.AsnWriter;
 
@@ -30,11 +31,74 @@ namespace eValService.Concrete
             _apiToken = configuration.GetConnectionString("ApiToken");
             _apiUrl = configuration.GetConnectionString("BaseUrl");
             _apiKey = configuration.GetConnectionString("GeminiApiKey");
-        } 
+        }
 
-        public Task<bool> PostRunReport()
+        public async Task<Response> PostRunReport()
         {
-            throw new NotImplementedException();
+            Response objResponse = new Response();
+            try
+            {
+                string url = $"{_apiUrl}/api/report/run";
+
+                using (var client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Add("apitoken", _apiToken);
+                    client.DefaultRequestHeaders.Add("wstoken", _wsToken);
+
+                    string selectedViewFieldsValue = "contacts.contactid,oaenrolments.enrolment_id,.oatasks.assessment_id,oaattempts.attempt_id,oaattempts.attemptstatus,oaattempts.attemptscore";
+                    string selectedFilterFieldsValue = "[\r\n  {\r\n    \"name\": \"oaattempts.attemptsubmitted\",\r\n    \"value\": \"yesterday\",\r\n    \"operator\": \"yesterday\"\r\n  },\r\n  {\r\n    \"name\": \"oaattempts.attemptstatus\",\r\n    \"value\": \"SUBMITTED\",\r\n    \"operator\": \"\"\r\n  }\r\n]";
+                    var formData = new MultipartFormDataContent
+                    {
+                        { new StringContent("onlineAssessmentAttempts"), "reportReference" },
+                        { new StringContent(selectedViewFieldsValue), "selectedViewFields" },
+                        { new StringContent(selectedFilterFieldsValue), "selectedFilterFields" }
+                    };
+
+                    var response = await client.PostAsync(url,formData);
+
+                    string result = await response.Content.ReadAsStringAsync();
+
+                    using (JsonDocument doc = JsonDocument.Parse(result))
+                    {
+                        string errorMsg = doc.RootElement.GetProperty("ERRORMSG").GetString();
+                        string errorCode = doc.RootElement.GetProperty("ERRORCODE").GetString();
+                        bool success = doc.RootElement.GetProperty("SUCCESS").GetBoolean();
+                        int errorNo = 0;
+                        if (!string.IsNullOrEmpty(errorCode))
+                        {
+                            errorNo = Convert.ToInt16(errorCode);
+                        }
+                        Console.WriteLine($"Error Message: {errorMsg}");
+                        Console.WriteLine($"Error Code: {errorNo}");
+                        Console.WriteLine($"Success: {success}");
+
+                        if (!success)
+                        {
+                            objResponse.IsSuceed = false;
+                            objResponse.Message = result;
+                            objResponse.StatusCode = errorNo;
+                            Console.WriteLine("❌ API call failed or returned no results.");
+                        }
+                        else
+                        {
+                            objResponse.IsSuceed = true;
+                            objResponse.Message = result;
+                            objResponse.StatusCode = errorNo;
+                        }
+                    }
+
+                    Console.WriteLine(result);
+                }
+                return objResponse;
+
+            }
+            catch (Exception ex)
+            {
+                objResponse.IsSuceed = false;
+                objResponse.Message = ex.Message;
+                objResponse.StatusCode = 500;
+                return objResponse;
+            }
         }
 
         public async Task<List<AssessmentDetails>> GetReportDetails()
@@ -64,7 +128,7 @@ namespace eValService.Concrete
 
         public async Task ConsumeAxcelerateQuestionAPI(string attemptId)
         {
-            string url = $"{_apiUrl}/api/v2/assessments/purple/attempts/{attemptId}/responses"; 
+            string url = $"{_apiUrl}/api/v2/assessments/purple/attempts/{attemptId}/responses";
             using (HttpClient client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Add("apitoken", _apiToken);
@@ -101,7 +165,7 @@ namespace eValService.Concrete
                             objAssessmentResultAudit.Question = question;
                             objAssessmentResultAudit.Answer = candidateAnswer;
                             objAssessmentResultAudit.ModelAnswer = modelAnswer;
-                            objAssessmentResultAudit.AIResponse = "N"; 
+                            objAssessmentResultAudit.AIResponse = "N";
                             objAssessmentResultAudit.IsVerify = false;
                             objAssessmentResultAudit.ActionStatus = string.Empty;
                             objAssessmentResultAudit.PushedToAccelerate = false;

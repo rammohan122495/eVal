@@ -13,4 +13,16 @@ namespace eValDTO.DTOs
         public int AttemptId { get; set; }
         public bool IsProcessed { get; set; }
     }
+
+    public class ScoredItemDTO
+    {
+        public int ItemResponseId { get; set; }
+        public int Score { get; set; }
+    }
+
+    public class ScoredItemRequest
+    {
+        public List<ScoredItemDTO> ScoredItemDTOs { get; set; }
+    }
+
 }

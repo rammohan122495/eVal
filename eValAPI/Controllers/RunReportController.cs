@@ -20,7 +20,8 @@ namespace eValAPI.Controllers
             await Task.Delay(5000);
             try
             {
-                return BadRequest("Something went wrong");
+                var response = await this._runReportService.PostRunReport();
+                return Ok(response);
             }
             catch (Exception ex)
             {

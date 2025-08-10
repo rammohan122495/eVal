@@ -42,6 +42,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "eValAPI.Controllers.AssessmentDetailsController",
+    "Method": "UpdateAxcelerate",
+    "RelativePath": "api/AssessmentDetails/UpdateAxcelerate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objScoredItemRequest",
+        "Type": "eValDTO.DTOs.ScoredItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "eValAPI.Controllers.InitiateAIController",
     "Method": "InitiateAI",
     "RelativePath": "api/InitiateAI/InitiateAI",

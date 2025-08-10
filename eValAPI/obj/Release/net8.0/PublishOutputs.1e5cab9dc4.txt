@@ -35,6 +35,7 @@ D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
+D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -64,10 +65,12 @@ D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValAI.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValDTO.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValRepository.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValService.dll
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValDTO.pdb
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValRepository.pdb
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValService.pdb
+D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValAI.pdb
 D:\Radush\eVakAPI\eValAPI\obj\Release\net8.0\PubTmp\Out\eValAPI.deps.json
